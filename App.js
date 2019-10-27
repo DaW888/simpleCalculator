@@ -52,8 +52,7 @@ class App extends Component {
 
         } else if (text === '=') {
             this.setState({
-                sum: eval(this.state.displayString).toFixed(8),
-                displayString: eval(this.state.displayString).toFixed(8),
+                sum: eval(this.state.displayString)
             })
         } else if (text === 'C') {
             this.setState({

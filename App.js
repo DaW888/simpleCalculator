@@ -42,6 +42,8 @@ class App extends Component {
                 const last = this.state.displayString.substr(-1);
                 if (last == text && ['/', '*', '-', '+', '.'].includes(text)) {
                     console.log('click same sign!');
+                } else if (['/', '*', '-', '+', '.'].includes(last) && ['/', '*', '-', '+', '.'].includes(text)) {
+                    console.log('tez nie mozna');
                 } else {
                     this.setState({
                         displayString: this.state.displayString + text,
